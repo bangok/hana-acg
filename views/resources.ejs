@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
+    <title>更多</title>   
+    <script src="/data/sound.data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <script src="/lib/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body class="app">
+<div id="app" >
+	<!--导航栏-->
+   <div class="navbar navbar-inverse navbar-fixed-top" id="menu-nav">
+        <div class="container" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <!-- sr-only仅阅读器能见实际不会呈现在页面上 -->
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">知音町</a>
+            </div>
+            
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                   <li><a href="homepage">首页</a></li>
+                    <li><a href="resources">资源库</a></li>
+                    <li><a href="more">更多</a></li>
+                </ul>
+            </div>
+        </div>
+   </div>
+  <!-- 内容区-->
+ 	<div class="container content">			
+ 			<!--内容区域开始-->
+ 			<div class="content-main">
+ 				<div class="neirong" v-for="item in soundPage">
+ 						<div class="row" @click="getSoundByAddress(item.address)">
+						  <div class="col-sm-6 col-md-4">
+						    <div class="thumbnail">
+						      <img v-bind:src="item.img" class="content-img" alt="点击进入">
+						      <div class="caption">
+						        <h4 class="content-title">{{item.title}}</h4>
+						        <div class="caption-main">
+						        	<span class="content-cap">CV：</span>
+						        	<span class="content-info">{{item.cv}}</span>
+						        </div>
+						        <div class="caption-main">
+						        	<span class="content-cap">简介：</span>
+						        	<span class="content-info">{{item.intro}}</span>
+						        </div>
+						        <div class="caption-main">
+						        	<span class="content-cap">提取码：</span>
+						        	<span class="content-info">{{item.password}}</span>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						</div>							 				
+	 			</div>
+
+	 			<!--内容区域结束-->
+ 			</div>
+ 			
+ 			<!--分页-->
+ 			<div class="fenye">
+ 				<nav aria-label="Page navigation">
+				  <ul class="pagination">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li v-for="item in itemList"><a href="#" @click="getSoundPage(item)">{{item}}</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+ 			</div>		
+ 	</div>
+</div>   
+</body>
+
+
+<script type="text/javascript">
+    	let vm = new Vue({
+		el: '#app',
+		data: {
+			soundPage:[		
+			],
+			itemList:[1,2,3,4,5]
+
+		},
+		methods:{
+			getSoundByAddress(address){
+				mui.openWindow({
+			    url: address
+			  });
+			},
+			
+			//每次获取3个作品
+			getSoundPage(index){
+				this.soundPage = [];
+				if(ALLSOUND[3*index-3]){
+					this.soundPage.push(ALLSOUND[3*index-3]);
+				}
+				
+				if(ALLSOUND[3*index-2]){
+					this.soundPage.push(ALLSOUND[3*index-2]);
+				}
+				
+				if(ALLSOUND[3*index-1]){
+					this.soundPage.push(ALLSOUND[3*index-1]);
+				}			
+			},
+       },
+       mounted(){
+    		this.getSoundPage(1);
+       }
+	});
+</script>
+</html>

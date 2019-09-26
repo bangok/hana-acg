@@ -1,0 +1,45 @@
+a:hover{
+ text-decoration:none;
+}
+
+.content{
+	margin-top:125px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 15%;
+}
+
+.fenye{
+	text-align: center;
+}
+
+.neirong{
+	margin-bottom: 20px;
+}
+
+.content-title{
+	font-family: "微软雅黑";
+	font-weight: 700;
+}
+
+.content-cap{
+	color:darkgreen;
+	font-family: "微软雅黑";
+}
+
+.caption-main{
+	font-size: 14px;
+}
+
+.content-info{
+	color: darkslategray;
+}
+
+.content-img{
+	border-radius: 5px;
+}
+
+.app{
+	background:whitesmoke;
+	background-size：cover;
+}
