@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
-    <title>更多</title>   
+    <title>资源库</title>   
     <script src="/data/sound.data.js" type="text/javascript" charset="utf-8"></script>
     <script src="/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap.min.css"/>
@@ -103,9 +103,7 @@
 		},
 		methods:{
 			getSoundByAddress(address){
-				mui.openWindow({
-			    url: address
-			  });
+				window.open(address); 
 			},
 			
 			//每次获取3个作品
