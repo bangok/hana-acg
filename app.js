@@ -24,6 +24,10 @@ app.use(express.static(path.join(__dirname, 'public'))); //设置静态文件目
 app.use('/', indexRouter);
 app.use('/page', pageRouter);
 
+//处理404错误，放在所有路由后面
+app.get('*', function (req, res){
+    res.render('error', {});
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
