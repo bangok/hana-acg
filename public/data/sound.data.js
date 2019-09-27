@@ -2,6 +2,22 @@
 let ALLSOUND =[
 //320 260
 {
+	title:"[RJ263247]ムチムチでダウナーなニート嫁の奉仕",
+	cv:"鹿乃仔",
+	intro:"女朋友是宅女，还有一点粗心大意，耳塞、耳语、耳舐，本作是复刻版。",
+	img:"/img/soundImg/RJ263247_img_main.jpg",
+	password:"rlgfnn",
+	address:"https://share.weiyun.com/5oOruX0"
+},
+{
+	title:"[RJ260224]不思議な女の子に尽くされ百合えっち",
+	cv:"鹿乃仔",
+	intro:"百合音声，请把自己想象成姐姐，被治愈系的妹妹接吻、入耳式攻击。",
+	img:"/img/soundImg/RJ260224_img_main.jpg",
+	password:"eoubei",
+	address:"https://share.weiyun.com/5iUIw0L"
+},
+{
 	title:"[RJ249123]妹みたいな年下彼女が、ココロもカラダもお〇んちんもトロトロに甘やかしてくれる音声",
 	cv:"天之瑶",
 	intro:"被娇小的妹妹所溶化的声音，温柔的声音、动着的手指……一切都让人感到治愈。",
