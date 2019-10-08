@@ -74,18 +74,19 @@
  				<nav aria-label="Page navigation">
 				  <ul class="pagination">
 				    <li>
-				      <a href="#" aria-label="Previous">
+				      <a href="#" aria-label="Previous" @click="getPrePage">
 				        <span aria-hidden="true">&laquo;</span>
 				      </a>
 				    </li>
 				    <li v-for="item in itemList"><a href="#" @click="getSoundPage(item)">{{item}}</a></li>
 				    <li>
-				      <a href="#" aria-label="Next">
+				      <a href="#" aria-label="Next" @click="getNextPage">
 				        <span aria-hidden="true">&raquo;</span>
 				      </a>
 				    </li>
 				  </ul>
 				</nav>
+				<center><div class="res-pageNum">第{{currentPage}}页</div></center>
  			</div>		
  	</div>
 </div>   
@@ -98,7 +99,8 @@
 		data: {
 			soundPage:[		
 			],
-			itemList:[1,2,3,4,5]
+			itemList:[1,2,3,4,5],
+			currentPage:1
 
 		},
 		methods:{
@@ -108,6 +110,7 @@
 			
 			//每次获取3个作品
 			getSoundPage(index){
+				this.currentPage = index;
 				this.soundPage = [];
 				if(ALLSOUND[3*index-3]){
 					this.soundPage.push(ALLSOUND[3*index-3]);
@@ -121,6 +124,45 @@
 					this.soundPage.push(ALLSOUND[3*index-1]);
 				}			
 			},
+			getPrePage(){
+				if(this.currentPage == 1){
+					return;
+				}
+				let index = this.currentPage-1;
+				this.currentPage--;
+				this.soundPage = [];
+				if(ALLSOUND[3*index-3]){
+					this.soundPage.push(ALLSOUND[3*index-3]);
+				}
+				
+				if(ALLSOUND[3*index-2]){
+					this.soundPage.push(ALLSOUND[3*index-2]);
+				}
+				
+				if(ALLSOUND[3*index-1]){
+					this.soundPage.push(ALLSOUND[3*index-1]);
+				}
+			},
+			getNextPage(){
+				let index = this.currentPage+1;
+				if(Math.ceil(ALLSOUND.length/3)<index){
+					return;
+				}
+				this.currentPage++;
+				this.soundPage = [];
+				if(ALLSOUND[3*index-3]){
+					this.soundPage.push(ALLSOUND[3*index-3]);
+				}
+				
+				if(ALLSOUND[3*index-2]){
+					this.soundPage.push(ALLSOUND[3*index-2]);
+				}
+				
+				if(ALLSOUND[3*index-1]){
+					this.soundPage.push(ALLSOUND[3*index-1]);
+				}
+			}
+			
        },
        mounted(){
     		this.getSoundPage(1);

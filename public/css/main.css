@@ -43,3 +43,10 @@ a:hover{
 	background:whitesmoke;
 	background-size：cover;
 }
+
+.res-pageNum{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	font-weight: 600;
+	color: cadetblue;
+}
