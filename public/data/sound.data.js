@@ -2,12 +2,20 @@
 let ALLSOUND =[
 //320 260
 {
+	title:"[RJ266712]童貞狩り～監禁拘束逆レイプ～",
+	cv:"伊ヶ崎綾香",
+	intro:"处男被大姐姐抓住了！当你醒来时，全身被束缚，躺在床上，她向胆怯的你提议一个游戏…",
+	img:"https://img.imoutomoe.net/images/2019/10/11/RJ266712_img_main.jpg",
+	password:"v5oz47",
+	address:"https://share.weiyun.com/55YPTzm"
+},
+{
 	title:"[RJ266222]気弱であまえんぼなロリサキュバスとらぶらぶあまあまえっち♪",
 	cv:"みもりあいの",
 	intro:"软软的女仆妹子，乖巧灵动，三分清纯，三分可爱，三分淘气，外带着一分的妖媚。你将会和她发生羞羞的事情。",
 	img:"https://img.imoutomoe.net/images/2019/10/11/b455dd2e2002b5f1a92747a8a6c4200b.jpg",
 	password:"27mnq9",
-	address:"https://share.weiyun.com/5EkIZRc "
+	address:"https://share.weiyun.com/5EkIZRc"
 },
 {
 	title:"[RJ266492]エッチな夢をみる音声！～『実践』明晰夢で発射する究極の夢精～",
@@ -15,7 +23,7 @@ let ALLSOUND =[
 	intro:"你将会做一个关于色情的梦，感受非常地清晰和真实。双耳道立体声音",
 	img:"https://img.imoutomoe.net/images/2019/10/11/jacket.jpg",
 	password:"y5dmle",
-	address:"https://share.weiyun.com/5m2cjEg "
+	address:"https://share.weiyun.com/5m2cjEg"
 },
 {
 	title:"[RJ266872]リップキャバ",
@@ -23,7 +31,7 @@ let ALLSOUND =[
 	intro:"「纯子」「立夏」「水树」「丽奈」和你的秘密故事，请在安全的地方收听本作品。",
 	img:"https://img.imoutomoe.net/images/2019/10/11/dd31d2786011f1168f489cec1422692f.jpg",
 	password:"2at2cc",
-	address:"https://share.weiyun.com/5RCr6ip "
+	address:"https://share.weiyun.com/5RCr6ip"
 },
 {
 	title:"[RJ265002]小悪魔姉妹のいたずら",
