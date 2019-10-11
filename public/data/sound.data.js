@@ -2,6 +2,30 @@
 let ALLSOUND =[
 //320 260
 {
+	title:"[RJ266222]気弱であまえんぼなロリサキュバスとらぶらぶあまあまえっち♪",
+	cv:"みもりあいの",
+	intro:"软软的女仆妹子，乖巧灵动，三分清纯，三分可爱，三分淘气，外带着一分的妖媚。你将会和她发生羞羞的事情。",
+	img:"https://img.imoutomoe.net/images/2019/10/11/b455dd2e2002b5f1a92747a8a6c4200b.jpg",
+	password:"27mnq9",
+	address:"https://share.weiyun.com/5EkIZRc "
+},
+{
+	title:"[RJ266492]エッチな夢をみる音声！～『実践』明晰夢で発射する究極の夢精～",
+	cv:"小石川うに",
+	intro:"你将会做一个关于色情的梦，感受非常地清晰和真实。双耳道立体声音",
+	img:"https://img.imoutomoe.net/images/2019/10/11/jacket.jpg",
+	password:"y5dmle",
+	address:"https://share.weiyun.com/5m2cjEg "
+},
+{
+	title:"[RJ266872]リップキャバ",
+	cv:"かの仔 、沢野ぽぷら、そらまめ、みもりあいの",
+	intro:"「纯子」「立夏」「水树」「丽奈」和你的秘密故事，请在安全的地方收听本作品。",
+	img:"https://img.imoutomoe.net/images/2019/10/11/dd31d2786011f1168f489cec1422692f.jpg",
+	password:"2at2cc",
+	address:"https://share.weiyun.com/5RCr6ip "
+},
+{
 	title:"[RJ265002]小悪魔姉妹のいたずら",
 	cv:"結姫うさぎ、みもりあいの",
 	intro:"这里是妹控的天堂。作为哥哥，每天晚上都会到两个妹妹的房间，被言语责备、调教指导。耳朵被舔的话心情就舒畅了，虽说两个妹妹都稍微有点S，但都很喜欢自己的哥哥。",
